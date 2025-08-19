@@ -1,69 +1,97 @@
-<!-- Changes to the CSS section -->
-<style>
-    /* ... (keep existing CSS up to company-intro) ... */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Company Name</title>
     
-    .company-intro {
-        padding: 4rem 0;
-    }
+    <!-- Keep your existing style section -->
+    <style>
+    /* ... (keeping existing CSS) ... */
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation would go here -->
     
-    .company-intro .content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 24px;
-        align-items: center;
-    }
+    <!-- Main Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>About Our Company</h1>
+            <p class="lead">Building excellence through innovation and dedication</p>
+        </div>
+    </section>
 
-    .team-grid {
-        padding: 4rem 0;
-    }
-
-    .team-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 24px;
-    }
-
-    .equipment-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 24px;
-    }
-
-    /* Add responsive improvements */
-    @media (max-width: 768px) {
-        .company-intro .content {
-            grid-template-columns: 1fr;
-        }
-        
-        .intro-image {
-            margin-top: 2rem;
-        }
-        
-        h1 { font-size: 2rem; }
-        h2 { font-size: 1.75rem; }
-    }
-</style>
-
-<!-- Changes to the company-intro section structure -->
-<section class="company-intro">
-    <div class="container">
-        <div class="content">
-            <div class="intro-text">
-                <!-- Keep existing content -->
-            </div>
-            <div class="intro-image">
-                <!-- Keep existing content -->
+    <!-- Company Intro Section -->
+    <section class="company-intro">
+        <div class="container">
+            <div class="content">
+                <div class="intro-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in [year], our company has been at the forefront of delivering exceptional [products/services] to our valued clients. With decades of combined experience, we've built our reputation on quality, innovation, and unwavering commitment to customer satisfaction.</p>
+                    <p>We believe in doing things differently. Our approach combines cutting-edge technology with time-tested expertise to deliver solutions that exceed expectations.</p>
+                    <ul class="company-highlights">
+                        <li>Over [X] years of industry experience</li>
+                        <li>More than [X] successful projects completed</li>
+                        <li>Team of [X] dedicated professionals</li>
+                        <li>Industry-leading customer satisfaction rate</li>
+                    </ul>
+                </div>
+                <div class="intro-image">
+                    <img src="assets/images/about-company.jpg" alt="Our Company Building" class="rounded-image">
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Changes to the team section structure -->
-<section id="team" class="team-grid">
-    <div class="container">
-        <h2>Our Expert Team</h2>
-        <div class="team-cards">
-            <!-- Keep existing team cards -->
+    <!-- Team Section -->
+    <section id="team" class="team-grid">
+        <div class="container">
+            <h2>Our Expert Team</h2>
+            <p class="section-intro">Meet the dedicated professionals who make our success possible.</p>
+            <div class="team-cards">
+                <div class="team-member">
+                    <img src="assets/images/team/member1.jpg" alt="Team Member Name">
+                    <h3>John Smith</h3>
+                    <p class="position">Chief Executive Officer</p>
+                    <p class="bio">20+ years of industry experience leading innovative solutions and team development.</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/team/member2.jpg" alt="Team Member Name">
+                    <h3>Sarah Johnson</h3>
+                    <p class="position">Technical Director</p>
+                    <p class="bio">Expert in implementing cutting-edge technologies and managing complex projects.</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/team/member3.jpg" alt="Team Member Name">
+                    <h3>Michael Chen</h3>
+                    <p class="position">Operations Manager</p>
+                    <p class="bio">Specialized in optimizing business processes and ensuring client satisfaction.</p>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <h2>Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-item">
+                    <h3>Innovation</h3>
+                    <p>Constantly pushing boundaries to deliver cutting-edge solutions</p>
+                </div>
+                <div class="value-item">
+                    <h3>Integrity</h3>
+                    <p>Maintaining the highest standards of professional conduct</p>
+                </div>
+                <div class="value-item">
+                    <h3>Excellence</h3>
+                    <p>Committed to delivering outstanding results in everything we do</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer would go here -->
+</body>
+</html>
