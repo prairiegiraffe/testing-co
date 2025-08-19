@@ -1,6 +1,6 @@
-# Testing Co Website
+# Testing co Website
 
-This is the official website for Testing Co, built with AI and deployed on Cloudflare Pages.
+This is the official website for Testing co, built with AI and deployed on Cloudflare Pages.
 
 ## Features
 - ⚡ Fast global CDN delivery via Cloudflare
