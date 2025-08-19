@@ -3,45 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing Co - About</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Learn about Testing co's expertise in destructive testing services in Gillette, WY. Discover our team, equipment, and certifications.">
+    <title>About Us | Testing co - Destructive Testing Experts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333333;
+            background: #FFFFFF;
+        }
+        .header {
+            height: 80px;
+            background: #FFFFFF;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+        .nav-links a {
+            color: #003366;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .page-title {
+            margin-top: 80px;
+            padding: 4rem 0;
+            background: #F5F7FA;
+        }
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 2rem; margin-bottom: 2rem; }
+        h3 { font-size: 1.75rem; }
+        .btn-primary {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #003366;
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary {
+            display: inline-block;
+            padding: 12px 24px;
+            border: 2px solid #003366;
+            color: #003366;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-left: 16px;
+        }
+        .company-intro {
+            padding: 4rem 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+        .team-grid {
+            padding: 4rem 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        .team-card {
+            padding: 24px;
+            background: #FFFFFF;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .equipment-grid {
+            padding: 4rem 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+        }
+        .certifications {
+            padding: 4rem 0;
+            background: #F5F7FA;
+            text-align: center;
+        }
+        .contact-bar {
+            padding: 2rem 0;
+            background: #003366;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .company-intro {
+                grid-template-columns: 1fr;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <h1><a href="index.html">Testing Co</a></h1>
-            <ul>
-                
-                <li><a href="index.html" >Home</a></li>
-                
-                <li><a href="about.html" class="active">About</a></li>
-                
-                <li><a href="services.html" >Services</a></li>
-                
-                <li><a href="contact.html" >Contact</a></li>
-                
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html"><img src="logo.png" alt="Testing co Logo" height="40"></a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </div>
     </header>
-    
-    <main>
-        
-        <section id="about-hero">
-            <h2>About Testing Co</h2>
-            <p>Testing Co has been serving Gillette, WY with professional Nondestructive Testing services.</p>
-        </section>
-        
-        <section id="company-info">
-            <h3>Our Experience</h3>
-            <p>With years of experience in Nondestructive Testing, we provide reliable and professional services.</p>
-            <p><strong>Business Type:</strong> Professional Services</p>
-            <p><strong>Service Areas:</strong> Gillette, WY and surrounding areas</p>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2024 Testing Co. All rights reserved.</p>
-        <p>📞 307123456 | 📧 test@email.com | 📍 Gillette, WY</p>
-    </footer>
+
+    <section class="page-title">
+        <div class="container">
+            <h1>About Testing co</h1>
+        </div>
+    </section>
+
+    <section class="company-intro">
+        <div class="container">
+            <div class="intro-text">
+                <h2>Leading Destructive Testing in Wyoming</h2>
+                <p>Testing co provides comprehensive destructive testing services in Gillette, Wyoming. With our state-of-the-art equipment and experienced team, we deliver reliable testing solutions for industries requiring precise material analysis and quality assurance.</p>
+                <div class="cta-buttons">
+                    <a href="services.html" class="btn-primary">View Our Services</a>
+                    <a href="#team" class="btn-secondary">Meet Our Team</a>
+                </div>
+            </div>
+            <div class="intro-image">
+                <img src="facility.jpg" alt="Testing co Facility" style="width: 100%; border-radius: 8px;">
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team-grid">
+        <div class="container">
+            <h2>Our Expert Team</h2>
+            <div class="team-cards">
+                <div class="team-card">
+                    <h3>Technical Director</h3>
+                    <p>Leading our testing operations with 15+ years of experience in destructive testing methodologies.</p>
+                </div>
+                <div class="team-card">
+                    <h3>Quality Manager</h3>
+                    <p>Ensuring compliance with industry standards and maintaining our testing protocols.</p>
+                </div>
+                <div class="team-card">
+                    <h3>Testing Specialists</h3>
+                    <p>Certified professionals performing precise material analysis and testing procedures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="equipment-grid">
+        <div class="container">
+            <h2>Our Testing Equipment</h2>
+            <div class="equipment-cards">
+                <!-- Equipment cards would go here -->
+            </div>
+        </div>
+    </section>
+
+    <section class="certifications">
+        <div class="container">
+            <h2>Industry Certifications</h2>
+            <!-- Certification logos would go here -->
+        </div>
+    </section>
+
+    <section class="contact-bar">
+        <div class="container">
+            <h2>Ready to Work With Us?</h2>
+            <p>Contact us today for your testing needs</p>
+            <p>Phone: <a href="tel:3071233214" style="color: #FFFFFF;">307-123-3214</a></p>
+            <p>Email: <a href="mailto:testing@test.co" style="color: #FFFFFF;">testing@test.co</a></p>
+            <p>Location: Gillette, WY</p>
+        </div>
+    </section>
 </body>
 </html>
