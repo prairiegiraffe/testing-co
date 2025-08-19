@@ -15,6 +15,31 @@
             color: #333333;
             background: #FFFFFF;
         }
+        header {
+            height: 80px;
+            background: #FFFFFF;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: #003366;
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-left: 24px;
+        }
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -140,9 +165,18 @@
     </style>
 </head>
 <body>
-    <!-- Header/Navigation would go here -->
+    <header>
+        <nav>
+            <div class="logo">Testing co</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
     
-    <!-- Main Hero Section -->
     <section class="hero">
         <div class="container">
             <h1>About Our Company</h1>
@@ -150,7 +184,6 @@
         </div>
     </section>
 
-    <!-- Company Intro Section -->
     <section class="company-intro">
         <div class="container">
             <div class="content">
@@ -172,7 +205,6 @@
         </div>
     </section>
 
-    <!-- Team Section -->
     <section id="team" class="team-grid">
         <div class="container">
             <h2>Our Expert Team</h2>
@@ -200,7 +232,6 @@
         </div>
     </section>
 
-    <!-- Values Section -->
     <section class="values-section">
         <div class="container">
             <h2>Our Core Values</h2>
@@ -220,7 +251,5 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer would go here -->
 </body>
 </html>
