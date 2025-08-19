@@ -1,0 +1,9 @@
+{
+  "name": "testing-co",
+  "version": "1.0.0",
+  "description": "Website for Testing Co",
+  "scripts": {
+    "build": "echo \"Static site - no build required\"",
+    "start": "echo \"Static site - deployed to Cloudflare Pages\""
+  }
+}
